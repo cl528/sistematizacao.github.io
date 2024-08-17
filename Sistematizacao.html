@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulo Feliz</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+#produto img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#equipe {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.membro {
+    text-align: center;
+}
+
+.membro img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pulo Feliz</h1>
+        <p>Trazendo a diversão na sua festa!</p>
+    </header>
+
+    <section id="produto">
+        <h2>Nosso Produto</h2>
+        <img src="img/cateloinflavel.jpeg" alt="Produto 1">
+        <img src="img/pulapulainflavel.jpeg" alt="Produto 2">
+        <p>Além dos inflaveis, também contamos com uma equipe incrível!</p>
+    </section>
+
+    <section id="equipe">
+        <h2>Conheça a Equipe</h2>
+        <div class="membro">
+            <img src="img/equipe1.png" alt="Foto dos membro 1">
+            <h3>Animadores</h3>
+            <p>brincadeiras e jogos interativos</p>
+        </div>
+        <div class="membro">
+            <img src="img/equipe2.png" alt="Foto dos membro 2">
+            <h3>Festas tematicas</h3>
+            <p>sua criatividade é o limiti</p>
+        </div>
+        <div class="membro">
+            <img src="img/equipe3.png" alt="Foto dos membro 3">
+            <h3>Cozinha interativa</h3>
+            <p>uma experiencia onde o seu pequeno poderá adquiri novas habilidades!</p>
+        </div>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastre-se para saber mais</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Startup Fictícia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
